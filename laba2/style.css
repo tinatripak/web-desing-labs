@@ -36,21 +36,24 @@ tr:nth-child(2), tr:first-of-type:hover{
     height: 40vh;
     background-color: rgb(245, 245, 245);
 }
+.position-image{
+    position: relative;
+}
 #top-dot{
-    left: 45%;
-    top: 4%;
+    left: calc((100% - 30px)/2);
+    top: 15px;
 }
 #left-dot{
-    top: 34%;
-    left: 4%;
+    top:calc((100% - 30px)/2);
+    left: 15px;
 }
 #right-dot{
-    top: 13%;
-    left: 86%;
+    top:calc((100% - 30px)/2);
+    left:calc((100% - 50px));
 }
 #bottom-dot{
-    left: 45%;
-    top: 64%;
+    left: calc((100% - 30px)/2);
+    top: calc((100% - 50px));
 }
 .dot, .dot-tr{
     background-color: red;
@@ -61,30 +64,30 @@ tr:nth-child(2), tr:first-of-type:hover{
 }
 
 .dot{
-    position: relative;
+    position: absolute;
 }
 
 #top-line{
-    position: relative;
+    position: absolute;
     width: 10px;
-    height: 155px;
-    left: 48.3%;
-    bottom: 33%;
+    height: 50%;
+    left: calc((100% - 10px)/2);
+    top: calc((100% - 78%)/2);
     background-color: black;
 }
 
 #right-line{
-    position: relative;
+    position: absolute;
     height: 10px;
-    width: 9vw;
-    left: 39%;
-    bottom: 46%;
+    width: 40%;
+    left: calc((100% - 23%)/2);
+    bottom: calc((100% - 5%)/2);
     background-color: black;
 }
 
 #black-dot{
-    left: 46%;
-    top: 3%;
+    left: calc((100% - 25px)/2);
+    top: calc((100% - 25px)/2);
     position: relative;
     background-color: black;
     border-radius: 30px;
@@ -95,22 +98,22 @@ tr:nth-child(2), tr:first-of-type:hover{
     position: absolute;
     background: #000;
     width: 10px;
-    height: 12%;
-    right: 49.7%;
-    top:112%;
+    height: 43%;
+    left: calc((100% - 10px)/2);
+    bottom: calc((100% - 8px)/2);
     transform-origin: 50% 100%;
-    animation: rotate 100s infinite linear;
+    animation: rotate 10s infinite linear;
 }
 
 #right-line-dynamic{
     position: absolute;
     background: #000;
     width: 10px;
-    height: 15%;
-    right: 49.7%;
-    top:109%;
+    height: 30%;
+    left: calc((100% - 10px)/2);
+    bottom: calc((100% - 8px)/2);
     transform-origin: 50% 100%;
-    animation: rotate 10s infinite linear;
+    animation: rotate 20s infinite linear;
 }
 @keyframes rotate {
     100% {
@@ -134,24 +137,24 @@ tr:nth-child(2), tr:first-of-type:hover{
 
 #left-dot-tr{
     top: 50%;
-    left: 5%;
+    left: 15px;
     transform: translate(-5%, -50%);
 }
 
 #top-dot-tr{
     left: 50%;
-    top: 5%;
+    top: 15px;
     transform: translate(-50%, -5%);
 }
 
 #right-dot-tr{
     top: 50%;
-    left:95%;
+    left: calc(100% - 20px);
     transform: translate(-95%, -50%);
 }
 
 #bottom-dot-tr{
-    top: 95%;
+    top: calc(100% - 20px);
     left: 50%;
     transform: translate(-50%, -95%);
 }
