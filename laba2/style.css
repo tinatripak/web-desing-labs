@@ -20,11 +20,11 @@ table, tr, td{
 }
 tr:first-of-type, tr:nth-child(2):hover{
     background-color: #078f8f;
-    color: #000000;
+    color: #f87070;
 }
 tr:nth-child(2), tr:first-of-type:hover{
     background-color: #f5f507;
-    color: #0300FF;
+    color: #0a0af8;
 }
 
 .position-image, .transform-image{
