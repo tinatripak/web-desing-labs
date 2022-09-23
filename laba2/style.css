@@ -18,13 +18,21 @@ table{
 table, tr, td{
     border: 1px solid black;
 }
-tr:first-of-type, tr:nth-child(2):hover{
+tr:first-of-type{
     background-color: #078f8f;
-    color: #f87070;
+    color: #2E0025;
 }
-tr:nth-child(2), tr:first-of-type:hover{
+tr:nth-child(2):hover{
+    background-color: #f87070;
+    color: #d1ffda;
+}
+tr:nth-child(2){
     background-color: #f5f507;
-    color: #0a0af8;
+    color: #001442;
+}
+tr:first-of-type:hover{
+    background-color: #0a0af8;
+    color: #ffebbd;
 }
 
 .position-image, .transform-image{
