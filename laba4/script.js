@@ -57,7 +57,7 @@ function addImage(){
         addElement[i].style.display = "none";
     }
 
-    createFirstPhotoWithButtons(`block${counter}`, `images/1.jpg`);
+    createFirstPhotoWithButtons(`block${counter}`, `images/lakes.jpg`);
     counter++;
 
 }
