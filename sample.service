@@ -1,0 +1,14 @@
+[Unit]
+Description=Kristina`s Service
+Requires=network.target
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=java -jar /opt/sample/service.jar
+Restart=on-failure
+RestartSec=10
+Environment=PORT=8888
+User=kristina
